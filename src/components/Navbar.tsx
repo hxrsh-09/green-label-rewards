@@ -24,10 +24,13 @@ export const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 hover-lift">
-            <div className="bg-gradient-to-r from-emerald-600 to-emerald-400 p-2 rounded-full">
-              <Leaf className="h-6 w-6 text-white" />
-            </div>
-            <span className="text-2xl font-bold gradient-text">EcoStyle</span>
+            {/* Place your logo here */}
+            <img
+              src="images/logo.jpg"
+              alt="Apparel Store Logo"
+              className="h-auto w-16 object-contain"
+            />
+            <span className="text-2xl font-bold gradient-text">The Apparel Store</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -52,11 +55,11 @@ export const Navbar = () => {
             {user ? (
               <div className="flex items-center space-x-4">
                 <Link to="/dashboard" className="flex items-center space-x-2 hover-lift">
-                  <img
+                  {/* <img
                     src={user.avatar}
                     alt="Profile"
                     className="w-8 h-8 rounded-full object-cover"
-                  />
+                  /> */}
                   <div className="text-sm">
                     <p className="font-semibold text-gray-700">{user.name}</p>
                     <p className="text-emerald-600 font-medium">{user.points} pts</p>

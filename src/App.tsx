@@ -12,10 +12,14 @@ import Rewards from "./pages/Rewards";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
+// import New from "./pages/new";
 
 const queryClient = new QueryClient();
 
 const App = () => (
+
+  
+  // <p className="" >heeloo</p>
   <QueryClientProvider client={queryClient}>
     <AuthProvider>
       <TooltipProvider>
@@ -26,6 +30,7 @@ const App = () => (
             <Navbar />
             <Routes>
               <Route path="/" element={<Index />} />
+              {/* <Route path="/new" element={<New />} /> */}
               <Route path="/how-it-works" element={<HowItWorks />} />
               <Route path="/rewards" element={<Rewards />} />
               <Route path="/login" element={<Login />} />

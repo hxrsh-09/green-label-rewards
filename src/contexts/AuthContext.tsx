@@ -30,11 +30,13 @@ export const useAuth = () => {
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+   const [addres, setAddress] = useState();
+
 
   useEffect(() => {
     // Simulate checking for existing session
     const checkAuth = async () => {
-      const savedUser = localStorage.getItem('ecostyle_user');
+      const savedUser = localStorage.getItem('Apparel_user');
       if (savedUser) {
         setUser(JSON.parse(savedUser));
       }
@@ -53,19 +55,20 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       id: '1',
       email,
       name: email.split('@')[0],
-      points: 1250,
+      points: 1205,
       tier: 'Silver',
+      
       avatar: `https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face`
     };
     
     setUser(mockUser);
-    localStorage.setItem('ecostyle_user', JSON.stringify(mockUser));
+    localStorage.setItem('Apparel_user', JSON.stringify(mockUser));
     setIsLoading(false);
   };
 
   const logout = () => {
     setUser(null);
-    localStorage.removeItem('ecostyle_user');
+    localStorage.removeItem('Apparel_user');
   };
 
   return (

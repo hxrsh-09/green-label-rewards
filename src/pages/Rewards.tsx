@@ -19,95 +19,96 @@ const Rewards = () => {
   const rewards = [
     {
       id: 1,
-      title: '10% Off Your Order',
-      description: 'Get 10% discount on your entire order',
+      title: '₹200 Off on Your Next Purchase',
+      description: 'Redeemable on any clothing item across categories.',
       points: 250,
       category: 'discounts',
-      tier: 'Green',
-      image: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=400&h=300&fit=crop',
+      tier: 'Bronze',
+      image: 'https://i.pinimg.com/736x/e9/16/0a/e9160ade1aba12b9766149cc6a659137.jpg',
       popular: false
     },
     {
       id: 2,
-      title: 'Free EcoStyle Tote Bag',
-      description: 'Sustainable canvas tote bag with EcoStyle logo',
-      points: 500,
+      title: 'Free Cotton Socks (Unisex)',
+      description: 'Soft, breathable socks — perfect for all-day comfort.',
+      points: 400,
       category: 'products',
-      tier: 'Green',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop',
+      tier: 'Bronze',
+      image: 'https://i.pinimg.com/1200x/00/0e/38/000e3844a2c9e83b660e6f0938a46d1f.jpg',
       popular: true
     },
     {
       id: 3,
-      title: '20% Off Your Order',
-      description: 'Get 20% discount on your entire order',
-      points: 750,
+      title: 'Flat 15% Off on Shirts & Tops',
+      description: 'Get a flat 15% discount on any shirt or top.',
+      points: 600,
       category: 'discounts',
       tier: 'Silver',
-      image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=300&fit=crop',
+      image: 'https://i.pinimg.com/1200x/fa/5b/43/fa5b430c5d2fd300296eb0ca6127feba.jpg',
       popular: false
     },
     {
       id: 4,
-      title: 'VIP Styling Session',
-      description: 'One-on-one virtual styling session with our fashion experts',
-      points: 1000,
+      title: 'Styling Advice by Our Experts',
+      description: 'Get free fashion advice via chat or video for your next outfit.',
+      points: 750,
       category: 'experiences',
       tier: 'Silver',
-      image: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=400&h=300&fit=crop',
+      image: 'https://i.pinimg.com/1200x/b1/bd/6e/b1bd6eb0d31fedec04913fd21395b0ad.jpg',
       popular: true
     },
     {
       id: 5,
-      title: 'Free Sustainable T-Shirt',
-      description: 'Choose any t-shirt from our organic cotton collection',
-      points: 1250,
+      title: 'Free T-Shirt of Your Choice',
+      description: 'Redeem a t-shirt from our essentials collection (any gender).',
+      points: 1000,
       category: 'products',
       tier: 'Silver',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop',
+      image: 'https://i.pinimg.com/736x/05/a7/e1/05a7e138a4c8f931c06149a7f23254d9.jpg',
       popular: false
     },
     {
       id: 6,
-      title: '30% Off Your Order',
-      description: 'Get 30% discount on your entire order',
-      points: 1500,
+      title: '20% Off On Your Birthday',
+      description: 'Celebrate with 20% off on any purchase made during your birthday week.',
+      points: 1200,
       category: 'discounts',
       tier: 'Gold',
-      image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=300&fit=crop',
+      image: 'https://i.pinimg.com/736x/f7/57/77/f75777889743faee5d35c5aaa4711150.jpg',
       popular: false
     },
     {
       id: 7,
-      title: 'Exclusive Collection Access',
-      description: 'Early access to limited edition collections',
-      points: 2000,
+      title: 'Early Access to New Collections',
+      description: 'Get first dibs on our seasonal drops and limited releases.',
+      points: 1500,
       category: 'vip',
       tier: 'Gold',
-      image: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=400&h=300&fit=crop',
+      image: 'https://i.pinimg.com/736x/47/67/69/476769f82968a5ab6889955ffa47b432.jpg',
       popular: true
     },
     {
       id: 8,
-      title: 'Free Complete Outfit',
-      description: 'Choose any complete outfit from our current collection',
-      points: 2500,
+      title: 'Free Hoodie (All Sizes & Genders)',
+      description: 'Choose from our range of cozy unisex hoodies.',
+      points: 2000,
       category: 'products',
       tier: 'Gold',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop',
+      image: 'https://i.pinimg.com/736x/ff/49/03/ff490388bc1efa8fb3b31c4498784fff.jpg',
       popular: false
     },
     {
       id: 9,
-      title: 'VIP Fashion Show Invite',
-      description: 'Exclusive invitation to our seasonal fashion shows',
+      title: 'Platinum Member Status',
+      description: 'Exclusive invites, bonus points, and access to hidden deals.',
       points: 3000,
       category: 'vip',
       tier: 'Platinum',
-      image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=300&fit=crop',
+      image: 'https://i.pinimg.com/736x/a5/9d/a8/a59da81fcac0d948dff78cee4984ea81.jpg',
       popular: true
     }
   ];
+  
 
   const filteredRewards = selectedCategory === 'all' 
     ? rewards 
@@ -133,7 +134,7 @@ const Rewards = () => {
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Discover amazing rewards waiting for you. From exclusive discounts to VIP experiences, 
-            there's something special for every EcoStyle member.
+            there's something special for every Apparel member.
           </p>
           <div className="flex items-center justify-center space-x-8 text-sm text-gray-600">
             <div className="flex items-center space-x-2">
@@ -157,19 +158,21 @@ const Rewards = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-2">
             {categories.map((category) => (
-              <Button
-                key={category.id}
-                variant={selectedCategory === category.id ? "default" : "outline"}
-                onClick={() => setSelectedCategory(category.id)}
-                className={`rounded-full transition-all duration-300 ${
-                  selectedCategory === category.id 
-                    ? 'bg-emerald-600 text-white shadow-lg' 
-                    : 'hover:bg-emerald-50 hover:text-emerald-700'
-                }`}
-              >
-                {category.icon}
-                <span className="ml-2">{category.name}</span>
-              </Button>
+             <Button
+             key={category.id}
+             variant={selectedCategory === category.id ? "default" : "outline"}
+             onClick={() => setSelectedCategory(category.id)}
+             className={`rounded-full transition-all duration-300 ${
+               selectedCategory === category.id
+                 ? 'bg-emerald-600 text-white shadow-lg hover:bg-emerald-600 hover:text-white' // ✅ prevent hover change
+                 : 'hover:bg-emerald-200 hover:text-[#1d3152] text-[#1d3152] border-[#1d3152]'
+             }`}
+           >
+             {category.icon}
+             <span className="ml-2">{category.name}</span>
+           </Button>
+           
+            
             ))}
           </div>
         </div>
@@ -217,7 +220,7 @@ const Rewards = () => {
                   <p className="text-gray-600 mb-4 text-sm leading-relaxed">
                     {reward.description}
                   </p>
-                  <Button className="w-full btn-primary group">
+                  <Button className="w-full btn-primary text-white group">
                     Redeem Now
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
@@ -229,7 +232,7 @@ const Rewards = () => {
       </section>
 
       {/* How to Redeem */}
-      <section className="py-20 bg-gradient-to-r from-emerald-600 to-emerald-400">
+      <section className="py-20 bg-gradient-to-r from-[#1d3152] to-[#1063ea]">
         <div className="container mx-auto px-4">
           <div className="text-center text-white">
             <h2 className="text-4xl font-bold mb-6">How to Redeem</h2>

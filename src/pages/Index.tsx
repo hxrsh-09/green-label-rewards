@@ -5,29 +5,82 @@ import { ArrowRight, Leaf, Heart, Users, Gift, Star, Award } from 'lucide-react'
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const Index = () => {
+ 
+ 
+ 
+ 
   const features = [
     {
       icon: <Gift className="h-8 w-8 text-emerald-600" />,
       title: "Earn Points",
-      description: "Get points with every purchase and eco-friendly action"
+      description: "Get points with every purchase, eco-friendly action, and special events. Earn extra for writing reviews, sharing on social media, and celebrating your birthday with us. Every dollar spent brings you closer to amazing rewards."
     },
     {
       icon: <Star className="h-8 w-8 text-emerald-600" />,
       title: "Exclusive Rewards",
-      description: "Redeem points for discounts, free items, and VIP access"
+      description: "Redeem your points for discounts on future purchases, free sustainable items, early access to new collections, and VIP-only experiences. Unlock special gifts and limited-edition products available only to members."
     },
     {
       icon: <Users className="h-8 w-8 text-emerald-600" />,
       title: "Refer Friends",
-      description: "Earn bonus points when your friends join the program"
+      description: "Invite friends to join Apparel and earn bonus points when they sign up and make their first purchase. The more friends you refer, the more you earn—plus, your friends get a welcome bonus too!"
     },
     {
       icon: <Award className="h-8 w-8 text-emerald-600" />,
       title: "Tier Benefits",
-      description: "Unlock exclusive perks as you reach higher tiers"
+      description: "Climb through our Green, Silver, Gold, and Platinum tiers to unlock exclusive perks: faster point earning, free shipping, birthday surprises, priority support, VIP styling sessions, and access to members-only events."
     }
   ];
+  
 
   const stats = [
     { number: "50K+", label: "Happy Members" },
@@ -37,6 +90,9 @@ const Index = () => {
   ];
 
   return (
+    
+    
+    
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative pt-20 pb-32 overflow-hidden">
@@ -54,12 +110,12 @@ const Index = () => {
                 <span className="gradient-text">You</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Join EcoStyle's exclusive rewards program and earn points with every sustainable choice. 
+                Join Apparel's exclusive rewards program and earn points with every sustainable choice. 
                 Get rewarded for looking good while doing good for the planet.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/login">
-                  <Button className="btn-primary group">
+                  <Button className="btn-primary text-white group">
                     Join the Movement
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
@@ -88,7 +144,7 @@ const Index = () => {
             <div className="relative animate-float">
               <div className="glass-card rounded-3xl p-8 hover-lift">
                 <img
-                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=600&h=600&fit=crop&crop=face"
+                  src="https://i.pinimg.com/736x/71/5e/2b/715e2b633187ddc5d112d222eb61e78d.jpg"
                   alt="Young person wearing sustainable fashion"
                   className="w-full h-[500px] object-cover rounded-2xl"
                 />
@@ -125,7 +181,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Why Choose <span className="gradient-text">EcoStyle Rewards</span>?
+              Why Choose <span className="gradient-text">Apparel Rewards</span>?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Our rewards program is designed to celebrate your sustainable choices while giving you amazing benefits.
@@ -148,8 +204,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-emerald-600 to-emerald-400 relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/10"></div>
+      <section className="py-20 bg-[#1d3152] relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center text-white">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">

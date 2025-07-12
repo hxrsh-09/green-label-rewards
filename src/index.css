@@ -1,26 +1,29 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+
 @layer base {
-  :root {
-    --background: 250 250 250;
+  /* :root {
+    --background: 255 255 255;
     --foreground: 20 20 20;
 
-    --card: 255 255 255;
-    --card-foreground: 20 20 20;
+    --card: 255 255 255; Keep this pure white */
+  /* --card-foreground: 20 20 20;
 
     --popover: 255 255 255;
-    --popover-foreground: 20 20 20;
+    --popover-foreground: 20 20 20; */
 
-    --primary: 159 122 60;
-    --primary-foreground: 255 255 255;
+  /* --primary: 255 255 255; /* ⬅️ Updated to teal (was yellowish: 159 122 60) */
+  /* --primary-foreground: 255 255 255; */
 
-    --secondary: 245 234 208;
-    --secondary-foreground: 20 20 20;
+  /* --secondary: 230 230 230; Neutral gray instead of beige */
+  /* --secondary-foreground: 20 20 20; */
 
-    --muted: 245 245 245;
+  /* --muted: 240 240 240;
     --muted-foreground: 115 115 115;
 
     --accent: 16 185 129;
@@ -30,11 +33,11 @@
     --destructive-foreground: 255 255 255;
 
     --border: 229 229 229;
-    --input: 229 229 229;
-    --ring: 159 122 60;
+    --input: 229 229 229; */
+  /* --ring: 24 160 132; match primary */
 
-    --radius: 0.75rem;
-  }
+  /* --radius: 0.75rem; */
+  /* } */
 
   .dark {
     --background: 20 20 20;
@@ -46,7 +49,7 @@
     --popover: 30 30 30;
     --popover-foreground: 250 250 250;
 
-    --primary: 228 197 137;
+    --primary: 255 255 255;
     --primary-foreground: 20 20 20;
 
     --secondary: 60 50 40;
@@ -66,7 +69,6 @@
     --ring: 228 197 137;
   }
 }
-
 @layer base {
   * {
     @apply border-border;
@@ -79,34 +81,42 @@
 
 @layer components {
   .glass-card {
-    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-lg;
-  }
-  
-  .glass-card-dark {
-    @apply bg-black/10 backdrop-blur-md border border-white/10;
-  }
-  
-  .neomorphism {
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.8);
-  }
-  
-  .neomorphism-inset {
-    box-shadow: inset 8px 8px 16px rgba(0, 0, 0, 0.1), inset -8px -8px 16px rgba(255, 255, 255, 0.8);
+    @apply bg-white/10 backdrop-blur-md border border-white/10 text-white shadow-lg;
   }
 
-  .gradient-text {
-    @apply bg-gradient-to-r from-emerald-600 to-emerald-400 bg-clip-text text-transparent;
+  .glass-card-dark {
+    @apply bg-black/20 backdrop-blur-md border border-white/10 text-white;
   }
+
+  .neomorphism {
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1),
+      -8px -8px 16px rgba(255, 255, 255, 0.8);
+  }
+
+  .neomorphism-inset {
+    box-shadow: inset 8px 8px 16px rgba(0, 0, 0, 0.1),
+      inset -8px -8px 16px rgba(255, 255, 255, 0.8);
+  }
+
+  /* .gradient-text {
+    
+    /* @apply bg-gradient-to-r from-emerald-600 to-emerald-400 bg-clip-text text-transparent; */
+    /* color: #1d3152; */
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-[#1d3152] to-[#294a78] bg-clip-text text-transparent;
+  }
+  
 
   .hover-lift {
     @apply transition-all duration-300 hover:scale-105 hover:shadow-xl;
   }
 
   .btn-primary {
-    @apply bg-gradient-to-r from-emerald-600 to-emerald-500 text-white px-8 py-3 rounded-full font-semibold hover:from-emerald-700 hover:to-emerald-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105;
+    @apply bg-gradient-to-r  from-[#47628d] to-[#1063ea] px-8 py-3 rounded-full font-semibold  transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105;
   }
 
   .btn-secondary {
-    @apply bg-white/80 backdrop-blur-md text-emerald-700 px-8 py-3 rounded-full font-semibold border border-emerald-200 hover:bg-emerald-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105;
+    @apply bg-white/80 backdrop-blur-md text-[#1d3152] px-8 py-3 rounded-full font-semibold border border-emerald-200 hover:bg-emerald-500 hover:text-[#1d3152] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105;
   }
 }

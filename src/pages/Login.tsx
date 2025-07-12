@@ -22,7 +22,7 @@ const Login = () => {
     try {
       await login(email, password);
       toast({
-        title: "Welcome to EcoStyle!",
+        title: "Welcome to Apparel!",
         description: "You've successfully joined our rewards program.",
       });
       navigate('/dashboard');
@@ -49,7 +49,7 @@ const Login = () => {
         <div className="max-w-md mx-auto">
           <div className="text-center mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              {isLogin ? 'Welcome Back' : 'Join EcoStyle'}
+              {isLogin ? 'Welcome Back' : 'Join Apparel'}
             </h1>
             <p className="text-gray-600">
               {isLogin 
@@ -146,7 +146,7 @@ const Login = () => {
                 <Button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full btn-primary py-3 text-lg"
+                  className="w-full btn-primary  py-3 text-lg"
                 >
                   {isLoading ? 'Processing...' : isLogin ? 'Sign In' : 'Create Account'}
                 </Button>
@@ -157,7 +157,7 @@ const Login = () => {
                   {isLogin ? "Don't have an account?" : "Already have an account?"}{' '}
                   <button
                     onClick={() => setIsLogin(!isLogin)}
-                    className="text-emerald-600 hover:text-emerald-700 font-semibold"
+                    className="text-[#1d3152] hover:text-[#1d3152] font-semibold"
                   >
                     {isLogin ? 'Sign up' : 'Sign in'}
                   </button>

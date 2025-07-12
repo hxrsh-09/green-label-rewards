@@ -10,14 +10,14 @@ const HowItWorks = () => {
     {
       icon: <UserPlus className="h-12 w-12 text-emerald-600" />,
       title: "Sign Up for Free",
-      description: "Create your EcoStyle account in under 30 seconds. No fees, no commitments.",
+      description: "Create your Apparel account in under 30 seconds. No fees, no commitments.",
       points: "Welcome Bonus: 100 points"
     },
     {
       icon: <ShoppingBag className="h-12 w-12 text-emerald-600" />,
       title: "Shop & Earn Points",
       description: "Earn 1 point for every $1 spent on our sustainable fashion collection.",
-      points: "Earn: 1 point = $1 spent"
+      points: "Earn: 1 point = ₹1 spent"
     },
     {
       icon: <Users className="h-12 w-12 text-emerald-600" />,
@@ -81,7 +81,7 @@ const HowItWorks = () => {
       <section className="py-16 bg-gradient-to-br from-emerald-50 to-beige-50">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            How <span className="gradient-text">EcoStyle Rewards</span> Works
+            How <span className="gradient-text">Apparel Rewards</span> Works
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Our simple 4-step system makes it easy to start earning rewards for your sustainable fashion choices.
@@ -158,7 +158,7 @@ const HowItWorks = () => {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {tiers.map((tier, index) => (
-              <Card key={index} className={`glass-card border-0 hover-lift animate-fade-in relative overflow-hidden ${tier.color === 'emerald' ? 'ring-2 ring-emerald-400' : ''}`} style={{ animationDelay: `${index * 0.1}s` }}>
+              <Card key={index} className={` border-0 hover-lift animate-fade-in relative overflow-hidden ${tier.color === 'emerald' ? 'ring-2 ring-emerald-400' : ''}`} style={{ animationDelay: `${index * 0.1}s` }}>
                 {tier.color === 'emerald' && (
                   <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-emerald-600 to-emerald-400 text-white text-center py-2 text-sm font-semibold">
                     Most Popular
@@ -186,13 +186,13 @@ const HowItWorks = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-emerald-600 to-emerald-400">
+      <section className="py-20 bg-gradient-to-r from-[#1d3152] to-[#1063ea]">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Start Your Journey?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Join EcoStyle Rewards today and start earning points with your very first purchase.
+            Join Apparel Rewards today and start earning points with your very first purchase.
           </p>
           <Link to="/login">
             <Button className="bg-white text-emerald-700 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
